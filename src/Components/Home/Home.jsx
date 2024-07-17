@@ -70,7 +70,7 @@ const jsonDbUrl = "https://basselzeidan80.github.io/Customers-Transaction-server
   const transactions = transactionsData;
 
   const getCustomerName = (customerId) => {
-    const customer = customers.find((c) => c.id == customerId);
+    const customer = customers.find((c) => c.id === customerId);
     return customer ? customer.name : "Unknown";
   };
 

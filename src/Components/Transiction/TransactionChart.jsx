@@ -24,7 +24,7 @@ export default function TransactionChart({ filteredTransactions, selectedCustome
   //   return customer ? customer.name : "Unknown";
   // };
 
-  const customerTransactions = filteredTransactions.filter(transaction => transaction.customer_id == selectedCustomerId);
+  const customerTransactions = filteredTransactions.filter(transaction => transaction.customer_id === selectedCustomerId);
 
   const chartData = {
     labels: customerTransactions.map(transaction => transaction.date),
